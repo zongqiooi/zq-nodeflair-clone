@@ -24,10 +24,6 @@ body {
   flex: 1;
 }
 
-/* .job-lists {
-  flex-shrink: 0;
-} */
-
 .job-card {
   border-radius: 8px;
   background-color: white;
@@ -135,6 +131,11 @@ body {
   -webkit-box-orient: vertical;
 }
 
+.job-details {
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
 .country {
   font-size: 14px;
   color: #838383;
@@ -177,7 +178,9 @@ hr {
 /* Right Panel - Job Details */
 
 .job-details {
-  min-height: 80vh;
+  font-size: 16px;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  min-height: 690px;
   border-radius: 8px;
   background-color: white;
   flex-basis: 650px;
@@ -200,7 +203,8 @@ hr {
   color: #3a3a3a;
 }
 
-.page-square-button {
+.page-square-button-1,
+.page-square-button-2 {
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
@@ -209,12 +213,24 @@ hr {
   border: 1px solid #dee2e6;
 }
 
-.page-square-button:hover {
+.page-square-button-1 {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+
+.page-square-button-2 {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+.page-square-button-1:hover,
+.page-square-button-2:hover {
   background-color: #f1f1f1;
   transition: 0.2s;
 }
 
-.page-square-button:focus {
+.page-square-button-1:focus,
+.page-square-button-2:focus {
   background-color: #1fc76a;
   color: white;
   transition: 0.2s;

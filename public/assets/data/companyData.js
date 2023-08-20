@@ -1,4 +1,4 @@
-const companyData = [
+const companiesData = [
   {
     id: 1,
     name: "NodeFlair",
@@ -8,7 +8,7 @@ const companyData = [
     postingDate: "15 days ago",
     location: "Singapore",
     salary: "S$1,200 / mth",
-    image: "./public/assets/companies/meta.png",
+    image: "./public/assets/companies/nodeflair.png",
     techStacks: [
       "React",
       "ERB",
@@ -70,7 +70,7 @@ const companyData = [
     id: 5,
     name: "Google",
     rating: "4.5",
-    title: "Software Engineering Manager, Search",
+    title: "Software Engineering Manager",
     role: "Fullstack",
     postingDate: "10 days ago",
     location: "Singapore",
@@ -101,4 +101,4 @@ const companyData = [
   },
 ];
 
-export default companyData;
+export default companiesData;

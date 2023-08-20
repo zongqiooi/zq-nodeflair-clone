@@ -1,6 +1,6 @@
-import "./styles/style.css";
 import JobDetails from "./components/JobDetails";
 import JobLists from "./components/JobLists";
+import "./styles/style.css";
 
 function App() {
   return (
