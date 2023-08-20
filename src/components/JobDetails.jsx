@@ -1,9 +1,5 @@
 const JobDetails = () => {
-  return (
-    <div className="job-details">
-      <div className="job-details-title">Data Engineer, Product Analytics</div>
-    </div>
-  );
+  return <div className="job-details">Data Engineer, Product Analytics</div>;
 };
 
 export default JobDetails;

@@ -1,6 +1,6 @@
 const JobCard = () => {
   return (
-    <div className="job-card">
+    <div className="job-card" tabIndex="1">
       <div className="job-card-flex-container">
         <div className="top-portion-flex-container">
           <div className="job-card-left">
