@@ -1,9 +1,13 @@
 import JobTechStack from "./JobTechStack";
 
 /* eslint-disable react/prop-types */
-const JobCard = ({ companyData }) => {
+const JobCard = ({ companyData, handleJobTitleCallback }) => {
   return (
-    <div className="job-card" tabIndex="1">
+    <div
+      className="job-card"
+      tabIndex="1"
+      onClick={() => handleJobTitleCallback(companyData.title)}
+    >
       <div className="job-card-flex-container">
         <div className="top-portion-flex-container">
           <div className="job-card-left-middle-flex-container">
