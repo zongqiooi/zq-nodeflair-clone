@@ -234,6 +234,7 @@ hr {
   background-color: #1fc76a;
   color: white;
   transition: 0.2s;
+  outline: none;
 }
 
 .page-square-buttons-container {

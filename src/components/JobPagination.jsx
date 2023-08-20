@@ -1,5 +1,13 @@
+import { useEffect, useRef } from "react";
+
 /* eslint-disable react/prop-types */
 const JobPagination = ({ currentPage, setCurrentPageCallback }) => {
+  const buttonOneRef = useRef();
+
+  useEffect(() => {
+    buttonOneRef.current.focus();
+  }, []);
+
   return (
     <div className="job-pagination">
       <span className="page-text">
@@ -10,6 +18,7 @@ const JobPagination = ({ currentPage, setCurrentPageCallback }) => {
           onClick={() => setCurrentPageCallback("1")}
           className="page-square-button-1"
           tabIndex="1"
+          ref={buttonOneRef}
         >
           1
         </div>
