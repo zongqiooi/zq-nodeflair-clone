@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 
 /* eslint-disable react/prop-types */
-const JobPagination = ({ currentPage, setCurrentPageCallback }) => {
+const JobPagination = ({ currentPage, handleCurrentPageCallback }) => {
   const buttonOneRef = useRef();
 
   useEffect(() => {
@@ -15,7 +15,7 @@ const JobPagination = ({ currentPage, setCurrentPageCallback }) => {
       </span>
       <div className="page-square-buttons-container">
         <div
-          onClick={() => setCurrentPageCallback("1")}
+          onClick={() => handleCurrentPageCallback("1")}
           className="page-square-button-1"
           tabIndex="1"
           ref={buttonOneRef}
@@ -23,7 +23,7 @@ const JobPagination = ({ currentPage, setCurrentPageCallback }) => {
           1
         </div>
         <div
-          onClick={() => setCurrentPageCallback("2")}
+          onClick={() => handleCurrentPageCallback("2")}
           className="page-square-button-2"
           tabIndex="2"
         >
