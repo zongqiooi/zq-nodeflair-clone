@@ -186,6 +186,44 @@ hr {
   align-items: center;
 }
 
+.job-pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.page-text {
+  font-size: 13.6px;
+  color: #3a3a3a;
+}
+
+.page-square-button {
+  cursor: pointer;
+  padding: 0.5rem 0.75rem;
+  margin-left: -1px;
+  color: #1fc76a;
+  background-color: white;
+  border: 1px solid #dee2e6;
+}
+
+.page-square-button:hover {
+  background-color: #f1f1f1;
+  transition: 0.2s;
+}
+
+.page-square-button:focus {
+  background-color: #1fc76a;
+  color: white;
+  transition: 0.2s;
+}
+
+.page-square-buttons-container {
+  display: flex;
+}
+
 /* Tablet View */
 
 @media screen and (max-width: 1010px) {
