@@ -1,10 +1,10 @@
-[insert gif here]
-[insert pictures in features section]
-![Hero-section]()
-
 # NodeFlair Job Portal Clone
 
 A fully responsive NodeFlair job portal clone 👨‍💻
+
+<p align="center">
+  <img src="https://github.com/zongqiooi/zq-nodeflair-clone/assets/95561298/41c21a81-259f-49f3-8651-36f3e2f32171" alt="nodeflair-clone gif" />
+</p>
 
 # Visit the Website!
 
@@ -28,7 +28,7 @@ https://zq-nodeflair-clone.vercel.app/
    `code .`
 4. Install all the project dependencies  
    `npm install`
-5. Run the project with Vite.js
+5. Run the project with Vite.js  
    `npm run dev`
 
 # Built With
@@ -40,10 +40,10 @@ https://zq-nodeflair-clone.vercel.app/
 
 # Features
 
-1. Fully responsiveness (support desktop, tablet, and mobile views)
+1. Fully responsive (support desktop, tablet, and mobile views)
 2. Job title displays (job title updates in the right panel)
-3. Pagination for job lists (different job cards in page 1 and page 2)
+3. Pagination for job lists (different job cards on page 1 and page 2)
 
 # Acknowledgement
 
-All the jobs data were taken from ![nodeflair.com](https://nodeflair.com/)
+All the jobs data were taken from [nodeflair.com](https://nodeflair.com/)
