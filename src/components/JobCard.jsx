@@ -1,5 +1,3 @@
-import JobTechStack from "./JobTechStack";
-
 /* eslint-disable react/prop-types */
 const JobCard = ({ companyData, handleJobTitleCallback }) => {
   return (
@@ -56,7 +54,9 @@ const JobCard = ({ companyData, handleJobTitleCallback }) => {
         <div className="btm-portion-flex-container">
           <div className="tech-stacks-flex-container">
             {companyData.techStacks.map((techStack, index) => (
-              <JobTechStack key={index} techStack={techStack} />
+              <div key={index} className="tech-stack-button">
+                {techStack}
+              </div>
             ))}
           </div>
         </div>
