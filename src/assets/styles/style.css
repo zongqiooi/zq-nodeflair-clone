@@ -138,10 +138,9 @@ body {
 
 .posting-date {
   font-size: 14px;
-  color: #838383;
   padding-right: 8px;
-  /* color: #1fc76a;
-  font-weight: bold; */
+  color: #1fc76a;
+  font-weight: bold;
 }
 
 .company-title-and-ratings-flex-container {
@@ -222,14 +221,6 @@ hr {
 .page-square-button-2:hover {
   background-color: #f1f1f1;
   transition: 0.2s;
-}
-
-.page-square-button-1:focus,
-.page-square-button-2:focus {
-  background-color: #1fc76a;
-  color: white;
-  transition: 0.2s;
-  outline: none;
 }
 
 .page-square-buttons-container {

@@ -1,12 +1,18 @@
-import { useEffect, useRef } from "react";
-
 /* eslint-disable react/prop-types */
 const JobPagination = ({ currentPage, handleCurrentPageCallback }) => {
-  const buttonOneRef = useRef();
+  const buttonSelectedStyle = {
+    color: "white",
+    backgroundColor: "#1fc76a",
+    transition: "0.2s",
+    outline: "none",
+  };
 
-  useEffect(() => {
-    buttonOneRef.current.focus();
-  }, []);
+  const buttonUnselectedStyle = {
+    color: "#1fc76a",
+    backgroundColor: "white",
+    transition: "0.2s",
+    outline: "none",
+  };
 
   return (
     <div className="job-pagination">
@@ -18,7 +24,9 @@ const JobPagination = ({ currentPage, handleCurrentPageCallback }) => {
           onClick={() => handleCurrentPageCallback("1")}
           className="page-square-button-1"
           tabIndex="1"
-          ref={buttonOneRef}
+          style={
+            currentPage === "1" ? buttonSelectedStyle : buttonUnselectedStyle
+          }
         >
           1
         </div>
@@ -26,6 +34,9 @@ const JobPagination = ({ currentPage, handleCurrentPageCallback }) => {
           onClick={() => handleCurrentPageCallback("2")}
           className="page-square-button-2"
           tabIndex="2"
+          style={
+            currentPage === "2" ? buttonSelectedStyle : buttonUnselectedStyle
+          }
         >
           2
         </div>
