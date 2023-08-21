@@ -7,6 +7,7 @@ import JobPagination from "./JobPagination";
 const JobLists = ({ handleJobTitleCallback }) => {
   const [currentPage, setCurrentPage] = useState("1");
 
+  // Changing the job lists after clicked page 1 or page 2
   const handleCurrentPageCallback = (pageNum) => {
     setCurrentPage(pageNum);
   };

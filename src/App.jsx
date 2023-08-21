@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 function App() {
   const [jobTitle, setJobTitle] = useState("👋😆");
 
+  // Changing the job title in the right panel after clicked a job card
   const handleJobTitleCallback = (selectedJobTitle) => {
     setJobTitle(selectedJobTitle);
   };
