@@ -8,7 +8,7 @@ const companiesData = [
     postingDate: "15 days ago",
     location: "Singapore",
     salary: "S$1,200 / mth",
-    image: "./public/assets/companies/nodeflair.png",
+    image: "./src/assets/companies/nodeflair.png",
     techStacks: [
       "React",
       "ERB",
@@ -29,7 +29,7 @@ const companiesData = [
     postingDate: "22 days ago",
     location: "Singapore",
     salary: "S$7,700 - S$15,400 / mth",
-    image: "./public/assets/companies/meta.png",
+    image: "./src/assets/companies/meta.png",
     techStacks: ["Strategy", "ETL", "C++", "SQL", "Scala", "Python", "C#"],
   },
   {
@@ -41,7 +41,7 @@ const companiesData = [
     postingDate: "about 1 month ago",
     location: "Singapore",
     salary: "S$5,438 - S$10,902 / mth",
-    image: "./public/assets/companies/accenture.png",
+    image: "./src/assets/companies/accenture.png",
     techStacks: ["MODE", "SAP", "Sprint", "Node.js"],
   },
   {
@@ -53,7 +53,7 @@ const companiesData = [
     postingDate: "25 days ago",
     location: "Singapore",
     salary: "S$8,688 - S$14,074 / mth",
-    image: "./public/assets/companies/shopee.png",
+    image: "./src/assets/companies/shopee.png",
     techStacks: [
       "Etcd",
       "C++",
@@ -75,7 +75,7 @@ const companiesData = [
     postingDate: "10 days ago",
     location: "Singapore",
     salary: "S$14,225 - S$27,000 / mth",
-    image: "./public/assets/companies/google.png",
+    image: "./src/assets/companies/google.png",
     techStacks: ["Strategy", "C++", "Java", "C", "Python"],
   },
   {
@@ -87,7 +87,7 @@ const companiesData = [
     postingDate: "25 days ago",
     location: "Singapore",
     salary: "S$6,000 - S$10,000 / mth",
-    image: "./public/assets/companies/tencent.png",
+    image: "./src/assets/companies/tencent.png",
     techStacks: [
       "HTTP",
       "Container",

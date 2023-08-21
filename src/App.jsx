@@ -1,7 +1,7 @@
 import { useState } from "react";
 import JobDetails from "./components/JobDetails";
 import JobLists from "./components/JobLists";
-import "./styles/style.css";
+import "../src/assets/styles/style.css";
 import Footer from "./components/Footer";
 
 function App() {

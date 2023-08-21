@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import companiesData from "../../public/assets/data/companyData";
+import companiesData from "../data/companyData";
 import JobCard from "./JobCard";
 import JobPagination from "./JobPagination";
 
