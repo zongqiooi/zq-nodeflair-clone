@@ -83,7 +83,7 @@ body {
   justify-content: space-between;
 }
 
-.company-logo {
+.card-logo {
   width: 45px;
   height: 45px;
   border-radius: 4px;
@@ -99,7 +99,7 @@ body {
   text-overflow: ellipsis;
 }
 
-.tech-stack-button {
+.card-tech-stack-button {
   color: var(--dark-grey);
   background-color: var(--light-grey);
   font-family: var(--font-family-roboto);
@@ -111,7 +111,7 @@ body {
   border-radius: 5px;
 }
 
-.role-button {
+.card-role-button {
   color: var(--nodeflair-green);
   background-color: var(--light-green);
   font-family: var(--font-family-roboto);
@@ -122,12 +122,7 @@ body {
   width: max-content;
 }
 
-.svg-icon {
-  height: 1em;
-  vertical-align: -0.125em;
-}
-
-.role-title {
+.card-role-title {
   font-family: var(--font-family-open-sans);
   font-size: 16px;
   line-height: 1.5em;
@@ -142,38 +137,43 @@ body {
   -webkit-box-orient: vertical;
 }
 
-.country {
+.card-country {
   color: var(--dark-grey);
   font-size: 14px;
 }
 
-.posting-date {
+.card-posting-date {
   color: var(--nodeflair-green);
   font-size: 14px;
   padding-right: 8px;
   font-weight: bold;
 }
 
-.company-title-and-ratings-flex-container {
+.card-title-and-ratings-flex-container {
   margin-bottom: 2px;
   display: flex;
   align-items: center;
 }
 
-.company-title {
+.card-title {
   font-size: 14px;
   margin-top: 1px;
 }
 
-.rating {
+.card-rating {
   font-size: 13px;
   padding-left: 10px;
 }
 
-.salary {
+.card-salary {
   font-size: 14px;
   margin: 9px 0px;
   font-weight: 600;
+}
+
+.svg-icon {
+  height: 1em;
+  vertical-align: -0.125em;
 }
 
 hr {
@@ -188,6 +188,11 @@ hr {
   align-items: center;
   gap: 18px;
   margin-top: 18px;
+}
+
+.page-text {
+  color: var(--dark-black);
+  font-size: 13.6px;
 }
 
 .page-square-button-1,
@@ -231,11 +236,6 @@ hr {
   justify-content: center;
   align-items: center;
   flex-basis: 650px;
-}
-
-.page-text {
-  color: var(--dark-black);
-  font-size: 13.6px;
 }
 
 /* Footer */
@@ -283,32 +283,29 @@ hr {
     justify-content: space-between;
   }
 
-  .role-title {
-    max-width: none;
-    width: none;
-  }
-
   .job-card {
     min-width: auto;
   }
 
   .job-card-middle {
     min-width: auto;
-  }
-
-  .job-card-middle {
     max-width: none;
     width: none;
-  }
-
-  .role-button {
-    max-width: 220px;
   }
 
   .job-card-right {
     max-width: 240px;
     text-align: end;
     float: right;
+  }
+
+  .card-role-title {
+    max-width: none;
+    width: none;
+  }
+
+  .card-role-button {
+    max-width: 220px;
   }
 
   .btm-portion-flex-container {
@@ -334,7 +331,7 @@ hr {
     position: relative;
   }
 
-  .role-button {
+  .card-role-button {
     position: absolute;
     right: 0%;
   }

@@ -11,19 +11,21 @@ const JobCard = ({ companyData, handleJobTitleCallback }) => {
           <div className="job-card-left-middle-flex-container">
             <div className="job-card-left">
               <img
-                className="company-logo"
+                className="card-logo"
                 src={companyData.image}
-                alt="company-image"
+                alt="card-image"
               />
             </div>
             <div className="job-card-middle">
-              <div className="company-title-and-ratings-flex-container">
-                <div className="company-title">{companyData.name}</div>
-                <div className="rating">{companyData.rating} ★</div>
+              <div className="card-title-and-ratings-flex-container">
+                <div className="card-title">{companyData.name}</div>
+                <div className="card-rating">{companyData.rating} ★</div>
               </div>
-              <h2 className="role-title">{companyData.title}</h2>
+              <h2 className="card-role-title">{companyData.title}</h2>
               <div>
-                <span className="posting-date">{companyData.postingDate} </span>
+                <span className="card-posting-date">
+                  {companyData.postingDate}{" "}
+                </span>
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -39,13 +41,13 @@ const JobCard = ({ companyData, handleJobTitleCallback }) => {
                     d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"
                   ></path>
                 </svg>{" "}
-                <span className="country">{companyData.location}</span>
+                <span className="card-country">{companyData.location}</span>
               </div>
-              <div className="salary">{companyData.salary}</div>
+              <div className="card-salary">{companyData.salary}</div>
             </div>
           </div>
           <div className="job-card-right">
-            <div className="role-button">{companyData.role}</div>
+            <div className="card-role-button">{companyData.role}</div>
           </div>
         </div>
         <div>
@@ -54,7 +56,7 @@ const JobCard = ({ companyData, handleJobTitleCallback }) => {
         <div className="btm-portion-flex-container">
           <div className="tech-stacks-flex-container">
             {companyData.techStacks.map((techStack, index) => (
-              <div key={index} className="tech-stack-button">
+              <div key={index} className="card-tech-stack-button">
                 {techStack}
               </div>
             ))}
