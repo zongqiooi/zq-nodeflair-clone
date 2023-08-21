@@ -1,10 +1,24 @@
-body {
-  margin: 0px;
-  background-color: #f3f2ef;
-  font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
-  color: #3a3a3a;
+* {
+  --background-light-grey: #f3f2ef;
+  --nodeflair-green: #1fc76a;
+  --light-green: #ddf7e9;
+  --dark-black: #3a3a3a;
+  --light-grey: #f1f1f1;
+  --dark-grey: #838383;
+  --dark-white: #dee2e6;
+  --white: #fff;
+  --font-family-roboto: "Roboto Mono", "Consolas", monospace;
+  --font-family-open-sans: "Open Sans", "Helvetica", "Arial", sans-serif;
 }
 
+body {
+  color: var(--dark-black);
+  background-color: var(--background-light-grey);
+  font-family: var(--font-family-open-sans);
+  margin: 0px;
+}
+
+/* Main App */
 .main-container {
   height: 100vh;
   display: flex;
@@ -17,16 +31,15 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  /* padding-left: 20px;
-  padding-right: 20px; */
   padding-left: 2vw;
   padding-right: 2vw;
   flex: 1;
 }
 
+/* Left Panel - Job List and Job Cards */
 .job-card {
+  background-color: var(--white);
   border-radius: 8px;
-  background-color: white;
   padding: 25px 25px 15px 25px;
   cursor: pointer;
   position: relative;
@@ -44,7 +57,7 @@ body {
 }
 
 .job-card:focus {
-  outline: #1fc76a 3px solid;
+  outline: var(--nodeflair-green) 3px solid;
 }
 
 .job-card-left-middle-flex-container {
@@ -87,27 +100,25 @@ body {
 }
 
 .tech-stack-button {
+  color: var(--dark-grey);
+  background-color: var(--light-grey);
+  font-family: var(--font-family-roboto);
   margin-right: 3px;
-  color: #838383;
   padding: 5px 8px;
   display: inline-block;
   max-width: 90%;
-  font-family: "Roboto Mono", "Consolas", monospace;
   font-weight: bold;
   border-radius: 5px;
-  background-color: #f1f1f1;
-  /* overflow: hidden; */
-  /* white-space: nowrap; */
 }
 
 .role-button {
+  color: var(--nodeflair-green);
+  background-color: var(--light-green);
+  font-family: var(--font-family-roboto);
   max-width: 80px;
-  color: #1fc76a;
-  font-family: "Roboto Mono", "Consolas", monospace;
   padding: 5px 8px;
   font-weight: 600;
   border-radius: 5px;
-  background-color: #ddf7e9;
   width: max-content;
 }
 
@@ -117,8 +128,8 @@ body {
 }
 
 .role-title {
+  font-family: var(--font-family-open-sans);
   font-size: 16px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
   line-height: 1.5em;
   margin: 0px;
   margin-top: 3px;
@@ -132,14 +143,14 @@ body {
 }
 
 .country {
+  color: var(--dark-grey);
   font-size: 14px;
-  color: #838383;
 }
 
 .posting-date {
+  color: var(--nodeflair-green);
   font-size: 14px;
   padding-right: 8px;
-  color: #1fc76a;
   font-weight: bold;
 }
 
@@ -166,23 +177,10 @@ body {
 }
 
 hr {
-  border: 0.1px solid #f1f1f1;
+  border: 0.1px solid var(--light-grey);
 }
 
-/* Right Panel - Job Details */
-
-.job-details {
-  font-size: 20px;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  min-height: 690px;
-  border-radius: 8px;
-  background-color: white;
-  flex-basis: 650px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+/* Left Panel - Pagination Buttons */
 .job-pagination {
   display: flex;
   flex-direction: column;
@@ -192,19 +190,14 @@ hr {
   margin-top: 18px;
 }
 
-.page-text {
-  font-size: 13.6px;
-  color: #3a3a3a;
-}
-
 .page-square-button-1,
 .page-square-button-2 {
+  color: var(--nodeflair-green);
+  background-color: var(--white);
+  border: 1px solid var(--dark-white);
   cursor: pointer;
   padding: 0.5rem 0.75rem;
   margin-left: -1px;
-  color: #1fc76a;
-  background-color: white;
-  border: 1px solid #dee2e6;
 }
 
 .page-square-button-1 {
@@ -219,7 +212,7 @@ hr {
 
 .page-square-button-1:hover,
 .page-square-button-2:hover {
-  background-color: #f1f1f1;
+  background-color: var(--light-grey);
   transition: 0.2s;
 }
 
@@ -227,6 +220,25 @@ hr {
   display: flex;
 }
 
+/* Right Panel - Job Details */
+.job-details {
+  font-family: var(--font-family-open-sans);
+  background-color: var(--white);
+  font-size: 20px;
+  min-height: 690px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 650px;
+}
+
+.page-text {
+  color: var(--dark-black);
+  font-size: 13.6px;
+}
+
+/* Footer */
 .footer-container {
   font-size: 12px;
   color: black;
@@ -234,7 +246,6 @@ hr {
   max-height: 110px;
   font-weight: 700;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   gap: 15px;
@@ -254,20 +265,11 @@ hr {
 }
 
 /* Tablet View */
-
 @media screen and (max-width: 1010px) {
-  .job-details {
-    display: none;
-  }
-
+  /* Left Panel - Job List and Job Cards */
   .job-lists {
     flex: 1;
   }
-
-  /* .job-card {
-    display: flex;
-    flex: 1;
-  } */
 
   .panel-flex-container {
     margin-left: auto;
@@ -279,15 +281,11 @@ hr {
   .top-portion-flex-container {
     display: flex;
     justify-content: space-between;
-    /* gap: 10px; */
-    /* position: relative; */
-    /* z-index: 10; */
   }
 
   .role-title {
     max-width: none;
     width: none;
-    /* max-width: 500px; */
   }
 
   .job-card {
@@ -301,49 +299,31 @@ hr {
   .job-card-middle {
     max-width: none;
     width: none;
-    /* max-width: 500px; */
   }
 
   .role-button {
     max-width: 220px;
-    /* max-width: none; */
   }
 
   .job-card-right {
     max-width: 240px;
     text-align: end;
     float: right;
-
-    /* position: absolute;
-    right: 0%;
-    z-index: 10; */
-    /* max-width: none; */
   }
 
   .btm-portion-flex-container {
-    /* min-width: 440px; */
     max-width: 80vw;
-    /* max-width: none;
-    width: none; */
   }
 
-  /* .job-card-right { */
-  /* justify-self: flex-end; */
-  /* align-self: flex-end; */
-  /* align-items: flex-end; */
-  /* align-self: baseline; */
-  /* position: absolute; */
-  /* position: relative; */
-  /* text-align: end; */
-  /* right: 10px; */
-  /* right: 0%; */
-  /* text-align: right; */
-  /* } */
+  /* Right Panel - Job Details */
+  .job-details {
+    display: none;
+  }
 }
 
 /* Mobile View */
-
 @media screen and (max-width: 440px) {
+  /* Left Panel - Job List and Job Cards */
   .job-card-left-middle-flex-container {
     display: flex;
     flex-direction: column;
@@ -359,6 +339,7 @@ hr {
     right: 0%;
   }
 
+  /* Footer */
   .footer-container {
     display: none;
   }
